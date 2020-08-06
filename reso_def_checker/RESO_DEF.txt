@@ -1,0 +1,12 @@
+st.txt:
+ack -A 7 --ignore-file=is:GameConfig.h RESO_DEF | sed -n '/RESO_DEF.*};$/p' | sed 's/\/\/.*//' 
+
+mt.txt:
+ack -A 7 --ignore-file=is:GameConfig.h RESO_DEF | sed '/RESO_DEF.*};$/d' | sed -n '/RESO_DEF/,/};/p' | sed 's/\/\/.*//' 
+
+out.txt:
+cat st.txt/mt.txt | sed 's/.*.cpp-[0-9]\+[-:]//' | ./tmd.py | sed -E 's/RESO_DEF[^\{]+\{(.*)\};$/\1/' > out.txt
+
+final.txt:
+cat out.txt | ./newparser.py 
+

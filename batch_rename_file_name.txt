@@ -1,0 +1,1 @@
+echo "sdfdf_123.png" | sed 'p;s/.*_//' |xargs -n 2 echo 'mv'

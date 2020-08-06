@@ -1,0 +1,8 @@
+#1.txt 关键字集合
+#2.txt 输出结果
+for f in $(cat /tmp/1.txt)
+    do
+        echo $f >> /tmp/2.txt
+        ack -l $f >> /tmp/2.txt
+        echo "" >> /tmp/2.txt
+    done

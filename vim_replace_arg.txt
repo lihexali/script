@@ -1,0 +1,3 @@
+:args *.txt
+:argdo $ | r b.txt | update
+读取b.txt的内容插入到*.txt的文件末尾

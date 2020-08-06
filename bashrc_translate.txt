@@ -1,0 +1,36 @@
+#cat 3.txt  | sed -r -n 's/.*def> (<sent><orig>.*<\/sent>).*/\1/p'
+#
+#--->
+#
+#b.txt = 
+#<sent><orig>My uncle has an &lt;em&gt;apple&lt;/em&gt; orchard.</orig><trans>我叔叔拥有一个苹果园。</trans></sent> <sent><orig>The &lt;em&gt;apple&lt;/em&gt; pie and custard are delicious.</orig><trans>苹果饼和软冻的味道好极了。</trans></sent> <sent><orig>The &lt;em&gt;apple&lt;/em&gt; trees are blossoming.</orig><trans>苹果树正在开花。</trans></sent>
+#
+#cat b.txt | sed 's/&lt;em&gt;//g' | sed 's/&lt;\/em&gt;//g' | sed 's/<trans>/\n/g' | sed 's/<orig>/\n/g' | sed 's/<[^<>]*>//g'
+#
+#-->
+#
+#My uncle has an apple orchard.
+#我叔叔拥有一个苹果园。
+#The apple pie and custard are delicious.
+#苹果饼和软冻的味道好极了。
+#The apple trees are blossoming.
+#苹果树正在开花。
+
+ts2(){
+result=`curl -s \
+        "http://dict.cn/ws.php?utf8=true&q=$1" `;
+
+echo $result | sed -r -n 's/.*<def>([^<]+)<\/def>.*/\1/p'; 
+
+#examples
+echo $result \
+    | sed -r -n 's/.*def> (<sent><orig>.*<\/sent>).*/\1/p' \
+    | sed 's/&lt;em&gt;//g' \
+    | sed 's/&lt;\/em&gt;//g' \ #remove html tags
+    | sed 's/<trans>/\n/g' \
+    | sed 's/<orig>/\n/g' \
+    | sed 's/<[^<>]*>//g'; #remove html tags
+
+return 0;
+
+}

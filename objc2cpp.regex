@@ -1,0 +1,38 @@
+Here are some regex script use in vim to help you translate objc code to cpp version.It is not perfect since it just could translate nearly 80% code correctly.
+how to use it :
+1.open mac terminal
+2.run vim open the objec-code file
+3.copy the regex below
+4.click the edit->paste on the terminal menu 
+5.prees enter key
+6.repeat step 4 - 5 seviral times
+7.done
+
+last ,if you have a more useful method to translate objc code to cpp code,please comment below,then I will recevied it in my email-box
+
+12.24:
+add nil -> NULL and Happy Christmas!
+12.25:
+Improve accuracy.
+2012.4.26:
+Add a line regex to Improve accuracy.
+
+:%s/@//g 
+:%s/self/this/g 
+:%s/YES/true/g
+:%s/NO/false/g
+:%s/nil/NULL/g
+:%s/\v\[([^\[\]]+)\]/--*\1=--/g 
+:%s/\v--\*(\u\u?.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1::\2(\3,\4,\5,\6,\7) 
+:%s/\v--\*(.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1->\2(\3,\4,\5,\6,\7) 
+:%s/\v--\*(\u\u?.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1::\2(\3,\4,\5,\6)/g 
+:%s/\v--\*(.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1->\2(\3,\4,\5,\6)/g 
+:%s/\v--\*(\u\u?.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1::\2(\3,\4,\5)/g 
+:%s/\v--\*(.{-}) ([^:]*):([^:]{-}) [^:]*:([^:]{-}) [^:]*:([^:][^=]*)\=--/\1->\2(\3,\4,\5)/g 
+:%s/\v--\*(\u\u?.{-}) ([^:]*):([^:]{-}) [^:]*:([^:][^=]*)\=--/\1::\2(\3,\4)/g
+:%s/\v--\*(.{-}) ([^:]*):([^:]{-}) [^:]*:([^:][^=]*)\=--/\1->\2(\3,\4)/g 
+:%s/\v--\*(\u\u?.{-}) ([^:]*):([^=]*)\=--/\1::\2(\3)/g 
+:%s/\v--\*(.{-}) ([^:]*):([^=]*)\=--/\1->\2(\3)/g 
+:%s/\v--\*(\u\u?.{-})\) ([^=:]{-})\=--/\1)->\2()
+:%s/\v--\*(\u\u?.{-}) ([^=:]{-})\=--/\1::\2()
+:%s/\v--\*(.{-}) ([^=]*)\=--/\1->\2()/g

@@ -1,0 +1,1 @@
+ls | xargs -n 1 echo | gsed -r 's/.*/cp \0 \0/'

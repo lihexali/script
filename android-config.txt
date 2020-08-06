@@ -1,0 +1,12 @@
+export CLICOLOR=1
+export LSCOLORS=exfxcxdxbxegedabagacad
+
+export PATH=$PATH:/Developer/Android/android-sdk-mac_x86/tools 
+export PATH=$PATH:/Developer/Android/android-sdk-mac_x86/platform-tools 
+export PATH=$PATH:/Developer/Android/android-ndk-r5b 
+ANDROID_NDK_ROOT=/Developer/Android/android-ndk-r5b 
+export ANDROID_NDK_ROOT
+ANDROID_SDK_ROOT=/Developer/Android/android-sdk-mac_x86
+export ANDROID_SDK_ROOT
+
+

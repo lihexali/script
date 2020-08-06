@@ -1,0 +1,1481 @@
+Tweets
+17 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification.
+'. 跳转到最后修改过的行。 `. 跳转到最后修改的确切位置。
+
+15 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+[I (that's bracket-open, capital-i) shows lines containing the word under the cursor. 
+[I (左中括号, 大写字母I) 展示所有包含当前光标下单词的行。
+
+14 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) is.gd/4xZW
+
+13 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'0 opens the last modified file ('1 '2 '3 works too). 
+'0 打开最近修改过的文文件('1 '2 '3 依次类推，同样有效)。 
+
+10 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w | and CTRL-W _ maximize your current split vertically and horizontally, respectively. CTRL-W = equalizes 'em.
+CTRL-w | and CTRL-W _ 分别使当前split(分割窗口)垂直，水平最大化。 CTRL-W = 使所有split窗口大小均等化。
+
+9 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) is.gd/4xZW
+gf 将打开光标下文件名的文件。
+
+8 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. is.gd/9cuP
+需要编辑和执行前一条命令？ 输入q: 找到它，编辑它，最后回车执行。
+
+7 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. is.gd/4xZW
+Done
+
+6 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+vim -c [command] will launch vim and run a : command at launch, e.g. "vim -c NERDTree." (via @sgharms)o
+Done
+
+3 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! is.gd/N4W
+Done
+
+2 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/<C-R>a/bar/g will place the contents of register 'a' in the search, and replace it with 'bar'.
+
+1 Dec vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/_pattern_/s/^/#/g will comment out lines containing _pattern_ (if '#' is your comment character/sequence) (via @vrybas_)
+
+30 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w K will switch vertical split into horizontal, CTRL-w H will switch a horizontal into a vertical. (via @mpetrsson)
+Done
+
+29 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set autochdir instead of :lcd %:p:h in your vimrc to change directories upon opening a file. (via @jmdeldin)
+
+26 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. is.gd/N4W
+Done
+
+25 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+Done
+
+
+24 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. is.gd/8epA
+:vimgrep pattern *.txt 在当前目录下搜索所有匹配pattern的.txt文件。
+
+23 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. is.gd/4xZW
+
+22 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\\/\//g Replaces all backslashes with forward slashes.
+done
+
+19 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} is.gd/7Onk\
+
+18 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) is.gd/4xZW
+:%s#<[^>]\+>##g 将移除 HTML 标签, 留下文本. (非贪婪匹配) is.gd/4xZW
+
+17 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. is.gd/7Onk
+done
+
+16 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. is.gd/4xZW
+
+15 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep /stext/ **/*.txt | :copen searches for stext recursively in *.txt files and show results in separate window (via @danechkin)
+
+12 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. is.gd/4xZW
+
+11 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+zz to center the cursor vertically on your screen. Useful when you 250Gzz, for instance. is.gd/XKGK1X
+
+2 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). is.gd/4xZW
+1 Nov vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. is.gd/7Onk
+31 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. is.gd/4xZW
+28 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. is.gd/4xZW
+27 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w s CTRL-w T will open current buffer in new tab (via @vrybas_)
+26 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:read [filename] will insert the contents of [filename] at the current cursor position (via @claytron)
+25 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. is.gd/4xZW
+24 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In insert mode do Ctrl+r=53+17<Enter>. This way you can do some calcs with vim. (via @grasselli)
+21 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} is.gd/7Onk\
+20 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/<C-R>a/bar/g will place the contents of register 'a' in the search, and replace it with 'bar'.
+19 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. is.gd/4xZW
+18 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ysiw' to surround current word with ', cs'{ changes 'word' to { word } using the surround plugin is.gd/fpwJQ (via @oriolgual)
+17 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:wa will save all buffers. :xa will save all buffers and exit Vim. is.gd/do1qZ
+14 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) is.gd/7Onk
+13 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< ! - -\_.\{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) is.gd/4xZW
+12 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Use '\v' in your regex to set the mode to 'very magic', and avoid confusion. (:h \v for more info.) is.gd/tj4y
+11 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. is.gd/8epA
+10 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+7 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep /stext/ **/*.txt | :copen searches for stext recursively in *.txt files and show results in separate window (via @danechkin)
+6 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+zz to center the cursor vertically on your screen. Useful when you 250Gzz, for instance. is.gd/XKGK1X
+5 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+4 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+3 Oct vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+30 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ v(.*\ n){5}/&\ r will insert a blank line every 5 lines (remove spaces) http://is.gd/6PB6n
+29 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set guifont=* in gvim or MacVim to get a font selection dialog. Useful while giving presentations. (via @claytron)
+28 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+27 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?somestuff.com http://is.gd/4xZW
+26 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+23 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+22 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+21 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+You probably know that 'u' is undo. Do you know that Ctrl-R is redo?
+20 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+19 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+16 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+After performing an undo, you can navigate through the changes using g- and g+. Also, try :undolist to list the changes. http://is.gd/cT0dc
+15 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+14 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+13 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+12 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then = to auto-indent the selected lines. http://is.gd/8etC
+9 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+8 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+[I (that's bracket-open, capital-i) shows lines containing the word under the cursor (via @nvie)
+7 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+6 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+2 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+1 Sep vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+31 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+30 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI
+29 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"2p will put the second to last thing yanked, "3p will put the third to last, etc. http://is.gd/do1Dt
+26 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+25 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.\+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+24 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+22 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+19 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+K runs a prgrm to lookup the keyword under the cursor. If writing C, it runs man. In Ruby, it (should) run ri, Python (perhaps) pydoc.
+18 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+vim -c [command] will launch vim and run a : command at launch, e.g. "vim -c NERDTree." (via @sgharms)
+17 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/\(.*\):\(.*\)/\2 : \1/ will reverse fields separated by ':' http://is.gd/4xZW
+16 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+15 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+12 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+11 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+10 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+9 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Edit and encrypt a file: vim -x filename (via @dlibanori)
+8 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+5 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+to use gvim to edit your git messages set git's core editor as follows: git config --global core.editor "gvim --nofork" (via @EmmanuelOga)
+4 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In visual mode, use s" to surround the selected text with " using the surround plugin. http://is.gd/fpwJQ (via @grasselli)
+3 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+2 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+1 Aug vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end will search for begin AND end over multiple lines. http://is.gd/4xZW
+29 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/^ \ n/ / to delete all empty lines (remove spaces from command!) (via @marekkubis)
+28 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Edit a command output in Vim as a file: $ command | vim - (via @dlibanori)
+27 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+26 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+25 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+22 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:scriptnames will list all plugins and _vimrcs loaded. http://is.gd/6PB6n
+21 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+20 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.\+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+19 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+18 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+15 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+14 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+13 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w K will switch vertical split into horizontal, CTRL-w H will switch a horizontal into a vertical. (via @mpetrsson)
+12 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+11 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) http://is.gd/4xZW
+8 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggVG= will auto-format the entire document
+7 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+6 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+5 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci{ – change text inside {} block. Also see di{, yi{, ci( etc. http://is.gd/cT0dc
+4 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+1 Jul vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tabdo [some command] will execute the command in all tabs. Also see windo, bufdo, argdo.
+30 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+29 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+28 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:w !sudo tee % will use sudo to write the open file (have you ever forgotten to `sudo vim /path/to/file`?) (via @gbretou)
+24 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set autochdir instead of :lcd %:p:h in your vimrc to change directories upon opening a file. (via @jmdeldin)
+23 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+22 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+21 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'0 opens the last modified file ('1 '2 '3 works too) (via @grasselli)
+20 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/_pattern_/s/^/#/g will comment out lines containing _pattern_ (if '#' is your comment character/sequence) (via @vrybas_)
+17 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vsplit filename will split the window vertically and open the file in the left-hand pane. Great when writing unit tests!
+16 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+15 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+14 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+13 Jun vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w | and CTRL-W _ maximize your current split vertically and horizontally, respectively. CTRL-W = equalizes 'em.
+12 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+zz to center the cursor vertically on your screen. Useful when you 250Gzz, for instance. http://is.gd/XKGK1X
+11 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w | and CTRL-W _ maximize your current split vertically and horizontally, respectively. CTRL-W = equalizes 'em.
+10 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+9 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w K will switch vertical split into horizontal, CTRL-w H will switch a horizontal into a vertical. (via @mpetrsson)
+6 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+5 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/_pattern_/s/^/#/g will comment out lines containing _pattern_ (if '#' is your comment character/sequence) (via @vrybas_)
+4 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+3 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+2 May vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:w !sudo tee % will use sudo to write the open file (have you ever forgotten to `sudo vim /path/to/file`?) (via @gbretou)
+29 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+vim -c [command] will launch vim and run a : command at launch, e.g. "vim -c NERDTree." (via @sgharms)
+28 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+27 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/^ \ n/ / to delete all empty lines (remove spaces from command!) (via @marekkubis)
+26 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+25 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+22 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+CTRL-w s CTRL-w T will open current buffer in new tab (via @vrybas_)
+21 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+19 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+18 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+15 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set guifont=* in gvim or MacVim to get a font selection dialog. Useful while giving presentations. (via @claytron)
+14 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+qa starts a recording in register 'a'. q stops it. @a repeats the recording. 5@a repeats it 5 times. http://is.gd/6PB6n
+13 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vsplit filename will split the window vertically and open the file in the left-hand pane. Great when writing unit tests!
+12 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+11 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:wa will save all buffers. :xa will save all buffers and exit Vim. http://is.gd/do1qZ
+8 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+7 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In insert mode do Ctrl+r=53+17<Enter>. This way you can do some calcs with vim. (via @grasselli)
+6 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"2p will put the second to last thing yanked, "3p will put the third to last, etc. http://is.gd/do1Dt
+5 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+4 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+1 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) http://is.gd/4xZW
+1 Apr vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+If you've got a tip for vim users, please submit it at http://bit.ly/eQNaQ9 !
+31 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Edit a command output in Vim as a file: $ command | vim - (via @dlibanori)
+31 Mar Brandon Smietana ‏ @RKHilbertSpace  Reply  Retweet  Favorite · Open
+Q: How to generate a random string? A: Put a fresh student in front of vi and tell him to quit.
+Retweeted by vimtips
+30 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+29 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+29 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@mxey Patience is a virtue. You can see more at http://vimtweets.com. You can also suggest a tip.
+ In reply to Maximilian Gaß
+28 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+You probably know that 'u' is undo. Do you know that Ctrl-R is redo?
+25 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+24 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggVG= will auto-format the entire document
+23 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Edit and encrypt a file: vim -x filename (via @dlibanori)
+22 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+[I (that's bracket-open, capital-i) shows lines containing the word under the cursor (via @nvie)
+21 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+18 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+17 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+16 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+15 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+14 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep /stext/ **/*.txt | :copen searches for stext recursively in *.txt files and show results in separate window (via @danechkin)
+12 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ v(.*\ n){5}/&\ r will insert a blank line every 5 lines (remove spaces) http://is.gd/6PB6n
+11 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+10 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+K runs a prgrm to lookup the keyword under the cursor. If writing C, it runs man. In Ruby, it (should) run ri, Python (perhaps) pydoc.
+9 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+8 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'0 opens the last modified file ('1 '2 '3 works too) (via @grasselli)
+5 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@evantravers See ack.vim: http://bit.ly/dD41HA
+ In reply to Evan Travers
+5 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+4 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+3 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+After performing an undo, you can navigate through the changes using g- and g+. Also, try :undolist to list the changes. http://is.gd/cT0dc
+2 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ysiw' to surround current word with ', cs'{ changes 'word' to { word } using the surround plugin http://is.gd/fpwJQ (via @oriolgual)
+1 Mar vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+26 Feb vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+26 Feb vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+25 Feb vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+25 Feb vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+24 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) http://is.gd/4xZW
+24 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk\
+22 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+19 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+18 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+17 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.\+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+16 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+15 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@jon2512chua period repeats the last action, @: repeats the last command-line command. :h @: for more info!
+15 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+12 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+11 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In visual mode, use s" to surround the selected text with " using the surround plugin. http://is.gd/fpwJQ (via @grasselli)
+10 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+9 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.\+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+8 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+5 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+4 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+3 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:read [filename] will insert the contents of [filename] at the current cursor position (via @claytron)
+2 Feb 11 Rein Henrichs ‏ @ReinH  Reply  Retweet  Favorite · Open
+@vimtips or just set $VISUAL in your shell.
+Retweeted by vimtips
+ In reply to vimtips
+2 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+to use gvim to edit your git messages set git's core editor as follows: git config --global core.editor "gvim --nofork" (via @EmmanuelOga)
+1 Feb 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tabdo [some command] will execute the command in all tabs. Also see windo, bufdo, argdo.
+29 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+28 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then = to auto-indent the selected lines. http://is.gd/8etC
+27 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+26 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+25 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+22 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+21 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/<C-R>a/bar/g will place the contents of register 'a' in the search, and replace it with 'bar'.
+20 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+19 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+18 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+15 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:scriptnames will list all plugins and _vimrcs loaded. http://is.gd/6PB6n
+14 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+13 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set autochdir instead of :lcd %:p:h in your vimrc to change directories upon opening a file. (via @jmdeldin)
+12 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+11 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+8 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+7 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+6 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+5 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end will search for begin AND end over multiple lines. http://is.gd/4xZW
+4 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+1 Jan 11 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI
+31 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@locks Yes. I retweeted @igrigorik's initial tweet about it on the 28th!
+ In reply to Ricardo Mendes
+31 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+30 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< ! - -\_.\{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+29 Dec 10 Ilya Grigorik ‏ @igrigorik  Reply  Retweet  Favorite · Open
+*drumroll* ... vimgolf.com is live! join in on the fun / add your own challenges @ http://j.mp/hW2UuP :-)
+Retweeted by vimtips
+29 Dec 10 Chris Parsons ‏ @chrismdp  Reply  Retweet  Favorite · Open
+@vimtips how about just !!date? Insert results of command at cursor...
+Retweeted by vimtips
+ In reply to vimtips
+29 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+28 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/\(.*\):\(.*\)/\2 : \1/ will reverse fields separated by ':' http://is.gd/4xZW
+25 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+24 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Use '\v' in your regex to set the mode to 'very magic', and avoid confusion. (:h \v for more info.) http://is.gd/tj4y
+23 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+22 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+21 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci{ – change text inside {} block. Also see di{, yi{, ci( etc. http://is.gd/cT0dc
+2 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+1 Dec 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ysiw' to surround current word with ', cs'{ changes 'word' to { word } using the surround plugin http://is.gd/fpwJQ (via @oriolgual)
+30 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+27 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+26 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk\
+25 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Many mentioned :Sex opens a file explorer also -- in a split window. It's a different tip! http://is.gd/hInzT Plus, :E is 2 fewer chars
+25 Nov 10 Anthony Panozzo ‏ @panozzaj  Reply  Retweet  Favorite · Open
+Wow, figured out that d% in #vim will delete to the matching brace. Makes sense, but never used it before. /cc @vimtips
+Retweeted by vimtips
+25 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+24 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+23 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+20 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+19 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+18 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+17 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+16 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+13 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.\+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+12 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:scriptnames will list all plugins and _vimrcs loaded. http://is.gd/6PB6n
+11 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+to use gvim to edit your git messages set git's core editor as follows: git config --global core.editor "gvim --nofork" (via @EmmanuelOga)
+10 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+9 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In visual mode, use s" to surround the selected text with " using the surround plugin. http://is.gd/fpwJQ (via @grasselli)
+6 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+5 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+4 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+3 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep /stext/ **/*.txt | :copen searches for stext recursively in *.txt files and show results in separate window (via @danechkin)
+2 Nov 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+30 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+29 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+28 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+27 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ v(.*\ n){5}/&\ r will insert a blank line every 5 lines (remove spaces) http://is.gd/6PB6n
+26 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set guifont=* in gvim or MacVim to get a font selection dialog. Useful while giving presentations. (via @claytron)
+23 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+You probably know that 'u' is undo. Do you know that Ctrl-R is redo?
+22 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) http://is.gd/4xZW
+21 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+20 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+19 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"2p will put the second to last thing yanked, "3p will put the third to last, etc. http://is.gd/do1Dt
+16 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:wa will save all buffers. :xa will save all buffers and exit Vim. http://is.gd/do1qZ
+15 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tabdo [some command] will execute the command in all tabs. Also see windo, bufdo, argdo.
+14 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+13 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+12 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then = to auto-indent the selected lines. http://is.gd/8etC
+9 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vsplit filename will split the window vertically and open the file in the left-hand pane. Great when writing unit tests!
+8 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+%s/<C-R>a/bar/g will place the contents of register 'a' in the search, and replace it with 'bar'.
+7 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+After performing an undo, you can navigate through the changes using g- and g+. Also, try :undolist to list the changes. http://is.gd/cT0dc
+6 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'0 opens the last modified file ('1 '2 '3 works too) (via @grasselli)
+5 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+2 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+1 Oct 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+30 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Edit a command output in Vim as a file: $ command | vim - (via @dlibanori)
+29 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+28 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+25 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< ! - -\_.\{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+24 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+23 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:read [filename] will insert the contents of [filename] at the current cursor position (via @claytron)
+22 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+21 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+[I (that's bracket-open, capital-i) shows lines containing the word under the cursor (via @nvie)
+18 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+17 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+16 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+15 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+14 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggVG= will auto-format the entire document
+11 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+10 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+9 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+8 Sep 10 Oriol Gual ‏ @oriolgual  Reply  Retweet  Favorite · Open
+Anyone interested in a #VIM skin (like http://bit.ly/aYvhSx) for #apple keyboards (w/ or w/o numpad)? Need at least 50 orders! Pls RT and DM
+Retweeted by vimtips
+8 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+7 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+4 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+3 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In insert mode do Ctrl+r=53+17<Enter>. This way you can do some calcs with vim. (via @grasselli)
+2 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+1 Sep 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Use '\v' in your regex to set the mode to 'very magic', and avoid confusion. (:h \v for more info.) http://is.gd/tj4y
+31 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+28 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+27 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+26 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+25 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+24 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+21 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+20 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+19 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+18 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+17 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+14 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+13 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Gah! Sorry everyone. Those were meant for my personal account, of course.
+13 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set autochdir instead of :lcd %:p:h in your vimrc to change directories upon opening a file. (via @jmdeldin)
+12 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.\+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+11 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+10 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/\(.*\):\(.*\)/\2 : \1/ will reverse fields separated by ':' http://is.gd/4xZW
+7 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI
+6 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end will search for begin AND end over multiple lines. http://is.gd/4xZW
+5 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+3 Aug 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+31 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci{ – change text inside {} block. Also see di{, yi{, ci( etc. http://is.gd/cT0dc
+30 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+We have 87 tips, 3 of which have been tweeted since the restart. Suggest more at http://vimtweets.com!
+30 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Those who've been following for a long time might've noticed repeats the past couple days. The loop has restarted!
+30 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+29 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+qa starts a recording in register 'a'. q stops it. @a repeats the recording. 5@a repeats it 5 times. http://is.gd/6PB6n
+28 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+20 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+[I (that's bracket-open, capital-i) shows lines containing the word under the cursor (via @nvie)
+16 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In insert mode do Ctrl+r=53+17<Enter>. This way you can do some calcs with vim. (via @grasselli)
+15 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Actually used C-a and C-x to increment and decrement numbers in some test data. Never thought I'd use it!
+14 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:wa will save all buffers. :xa will save all buffers and exit Vim. http://is.gd/do1qZ
+13 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"2p will put the second to last thing yanked, "3p will put the third to last, etc. http://is.gd/do1Dt
+10 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+9 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+8 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+You probably know that 'u' is undo. Do you know that Ctrl-R is redo?
+7 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+6 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci " inside a " " will erase everything between "" and place you in insertion mode. (via @rbernardelli)
+3 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+2 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+1 Jul 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< ! - -\_.\{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+30 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Use '\v' in your regex to set the mode to 'very magic', and avoid confusion. (:h \v for more info.) http://is.gd/tj4y
+29 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tabdo [some command] will execute the command in all tabs. Also see windo, bufdo, argdo.
+26 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+25 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+24 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ci{ – change text inside {} block. Also see di{, yi{, ci( etc. http://is.gd/cT0dc
+23 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+qa starts a recording in register 'a'. q stops it. @a repeats the recording. 5@a repeats it 5 times. http://is.gd/6PB6n
+22 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+19 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+After performing an undo, you can navigate through the changes using g- and g+. Also, try :undolist to list the changes. http://is.gd/cT0dc
+18 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/\(.*\):\(.*\)/\2 : \1/ will reverse fields separated by ':' http://is.gd/4xZW
+17 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+16 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:read [filename] will insert the contents of [filename] at the current cursor position (via @claytron)
+15 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+12 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ v(.*\ n){5}/&\ r will insert a blank line every 5 lines (remove spaces) http://is.gd/6PB6n
+11 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+10 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+9 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set autochdir instead of :lcd %:p:h in your vimrc to change directories upon opening a file. (via @jmdeldin)
+8 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+5 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+4 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+3 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+2 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+2 Jun 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Technical difficulties with my auto-tweeting. It'll return soon. It may or may not be BP's fault.
+24 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Check out these Vim tips from the Thoughtbot crew: http://robots.thoughtbot.com/post/619330025/viiiiiiiiiiiiiiiiiim
+18 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+You can now search tips at http://vimtweets.com. Check it out, and tell me what you think!
+15 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+14 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+13 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+11 May 10 PeepCode ‏ @peepcode  Reply  Retweet  Favorite · Open
+Smash Into Vim! It's the new screencast from PeepCode: http://peepcode.com/products/smash-into-vim-i
+Retweeted by vimtips
+12 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+11 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+8 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+to use gvim to edit your git messages set git's core editor as follows: git config --global core.editor "gvim --nofork" (via @EmmanuelOga)
+7 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@panozzaj It should be a command. Sorry. I've updated the tip to read :40,50m30
+ In reply to Anthony Panozzo
+7 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+6 May 10 Robert Pitts ‏ @rbxbx  Reply  Retweet  Favorite · Open
+:y<line-number> will yank the passed in ln, :y<ln1, ln2> will yank the range. eg. :y41 or :y45,50 #vim
+Retweeted by vimtips
+6 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end will search for begin AND end over multiple lines. http://is.gd/4xZW
+5 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+4 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set guifont=* in gvim or MacVim to get a font selection dialog. Useful while giving presentations. (via @claytron)
+1 May 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+30 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+29 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+28 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+27 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vsplit filename will split the window vertically and open the file in the left-hand pane. Great when writing unit tests!
+24 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^\ n\ +/\ r/ will compress multiple empty lines into one. (remove spaces) http://is.gd/4xZW
+23 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+22 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+21 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+20 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+17 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.\+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+16 Apr 10 claytron ‏ @claytron  Reply  Retweet  Favorite · Open
+wrote my first vim plugin! vimsizer, inspired by the great Firesizer for Firefox. http://bit.ly/9eKuOc
+Retweeted by vimtips
+16 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+16 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Bonus tweet for (USA) tax day! Please suggest tweets at vimtweets.com.
+16 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.\+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+15 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+13 Apr 10 Jeff Schoolcraft ‏ @jschoolcraft  Reply  Retweet  Favorite · Open
+10 Vim Tutorials to Jumpstart Your Editor Skills: http://bit.ly/axRdZY
+Retweeted by vimtips
+14 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI
+13 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+10 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+9 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+8 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+7 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Announcement: Do you have a vim tip you'd like to share? Do you want to browse all vimtips? Check out http://vimtweets.com!
+7 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+6 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+3 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+2 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+1 Apr 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+31 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:scriptnames will list all plugins and _vimrcs loaded. http://is.gd/6PB6n
+30 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+And, of course, follow @vimcasts.
+30 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+While you're waiting for me to begin steady tweeting again, you should check out http://vimcasts.org!
+25 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In case you were worried: tips will return soon. I promise.
+13 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI
+12 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+11 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@kevinwatters I don't disagree! It's mostly just cute. "hey look what I can do!"
+ In reply to Kevin Watters
+11 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< !--\_.{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+10 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+9 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+6 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+5 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+4 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+3 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+2 Mar 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+27 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+26 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+25 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+24 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+23 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@godfoca . Repeats the last edit. @: repeats the last command-line command. So, :w then @: would write twice. Make sense?
+ In reply to Nicolás Sanguinetti
+23 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+20 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+19 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+18 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+17 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@pykler ha! Right, that's what I meant. ;-). Replace def with hours. Sorry.
+ In reply to Hatem Nassrat
+17 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+16 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\v(.*\n){5}/&\r will insert a blank line every 5 lines http://is.gd/6PB6n
+13 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+12 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+11 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+10 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Tip from 2 days ago should have been %s#.*\ (def\ ).*#\ 1# will delete everything on all lines except for the string 'hours'. (no spaces)
+10 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+9 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+6 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+5 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+4 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vsplit filename will split the window vertically and open the file in the left-hand pane. Great when writing unit tests!
+3 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+2 Feb 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+30 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@mileszs Ignore this update. It is only a test.
+30 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+29 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+28 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+27 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+26 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+23 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Added 5 new tips to the db. A sensible way for you to suggest tips is also in the works.
+23 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@euanmaxwell Yup! Sorry. I updated the tip. Thanks for the heads-up.
+ In reply to Euan Maxwell
+23 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then == to auto-indent the selected lines. http://is.gd/8etC
+22 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk
+20 Jan 10 Bryan Liles (ツ) ‏ @bryanl  Reply  Retweet  Favorite · Open
+Looking for tips to move text around in vim? http://smartic.us/2010/01/20/moving-text-around-in-vim/
+Retweeted by vimtips
+21 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vmap // y/< C-R >"< CR > will make searching for highlighted text (i.e. in visual mode) require only a highlight and // http://is.gd/4xZW
+20 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+19 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+15 Jan 10 Drew Olson ‏ @drewolson  Reply  Retweet  Favorite · Open
+@vimtips i have a plugin for running ruby tests/specs as well. it also allows running focused tests and contexts http://bit.ly/5txiiz
+Retweeted by vimtips
+ In reply to vimtips
+16 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+15 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+If you're a Ruby developer, check out @ReinH's rubyredgreen plugin for tests from Vim. http://is.gd/6jAut http://screenr.com/gK1
+15 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+14 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@godfoca Sorry I wasn't of more help!
+ In reply to Nicolás Sanguinetti
+14 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+13 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@godfoca Perhaps one of the solutions here will help (I hope!): http://vim.wikia.com/wiki/Mac_OS_X_clipboard_sharing
+ In reply to Nicolás Sanguinetti
+13 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+12 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+9 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+I've built up ~70 tips in my db. You'll see tips you've seen previously, if you've been following a while. I know I should add more. :-)
+9 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+8 Jan 10 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+We're back, thanks to a reminder from HN! Tips will be tweeted daily, again. Perhaps I'll rewrite the tip-tweeting app this weekend....
+3 Nov 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+31 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+30 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+29 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+28 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+27 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+24 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+23 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+22 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+21 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+20 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+16 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+15 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+14 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+13 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+12 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+9 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+8 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+7 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+6 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+5 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+2 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+1 Oct 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+30 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+29 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+28 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+25 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+25 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+24 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+23 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+22 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+19 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+18 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+17 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vmap // y/< C-R >"< CR > will make searching for highlighted text (i.e. in visual mode) require only a highlight and // http://is.gd/4xZW
+15 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+12 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< !--\_.{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+11 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+10 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+3 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+2 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+1 Sep 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+29 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+28 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To use a mouse in terminal vim, put "set mouse=a" and "set ttymouse=xterm2" in your .vimrc; although the 2nd setting may vary, :h ttymouse
+25 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+22 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+20 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+15 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+14 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/(.*):(.*)/2 : 1/ will reverse fields separated by ':' http://is.gd/4xZW
+13 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+12 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI (OSX users, see http://is.gd/9dmN)
+11 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:5s/^ +/ / will compress multiple empty lines into one. http://is.gd/4xZW
+6 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+5 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:he /\v will set your magic level properly for Vim regexes. Can help avoid confusion! http://is.gd/tj4y
+4 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+1 Aug 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+31 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+30 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+29 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+28 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then == to auto-indent the selected lines. http://is.gd/8etC
+25 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+24 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+23 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:E to see a simple file explorer. (:Ex will too, if that's easier to remember.) http://is.gd/7Onk
+22 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+21 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+18 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk
+17 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+16 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+15 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end/ will search for begin AND end over multiple lines. http://is.gd/4xZW
+14 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\ r//g to remove all those nasty ^M from a file, or :%s/\ r$//g for only at the end of a line. http://is.gd/8ejs
+11 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+1 Jul 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:5s/^ +/ / will compress multiple empty lines into one. http://is.gd/4xZW
+30 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+27 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+26 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end/ will search for begin AND end over multiple lines. http://is.gd/4xZW
+25 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+24 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-c to quickly get out of command-line mode. (Faster than hitting ESC a couple times.) http://is.gd/GTtq
+23 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+20 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+19 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+18 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+17 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+16 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+13 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g; will cycle through your recent changes (or g, to go in reverse. http://is.gd/4xZW
+12 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+11 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+10 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+9 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+6 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+5 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< fred >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+4 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+3 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+2 Jun 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:he /\v will set your magic level properly for Vim regexes. Can help avoid confusion! http://is.gd/tj4y
+30 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/<word>//gn
+29 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+28 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+27 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+26 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+23 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+22 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+21 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+20 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+19 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+16 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vmap // y/< C-R >"< CR > will make searching for highlighted text (i.e. in visual mode) require only a highlight and // http://is.gd/4xZW
+15 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+14 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+13 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+12 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/(.*):(.*)/2 : 1/ will reverse fields separated by ':' http://is.gd/4xZW
+9 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+8 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< !--\_.{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+7 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI (OSX users, see http://is.gd/9dmN)
+6 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+5 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+2 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+1 May 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+30 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+29 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+28 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+There are several file explorer/project drawer plugins, as well. NERDTree: http://is.gd/4t3p and Project: http://is.gd/uUrz, to name two.
+28 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@seanstickle pointed out that :E will get you the file explorer, and improve your typing efficiency! Haha. (Tip updated, this time.)
+28 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Ex to see a simple file explorer. http://is.gd/7Onk
+25 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To use a mouse in terminal vim, put "set mouse=a" and "set ttymouse=xterm2" in your .vimrc; although the 2nd setting may vary, :h ttymouse
+24 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+23 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+22 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+If you like :vimgrep and :grep, you might also check out the Ack plugin. http://is.gd/lZ1x
+22 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+21 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+18 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+And, as @leptom mentions, gg=GG will auto-indent all lines.
+18 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then == to auto-indent the selected lines. http://is.gd/8etC
+17 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+16 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk
+15 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+; is a motion to repeat last find with f. f' would find next quote. c; would change up to the next ' (via @techpickles) http://is.gd/qZIs
+11 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+10 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+9 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*(hours).*#1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+8 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+7 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred|joe/ will search for either fred OR joe. http://is.gd/4xZW
+4 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+3 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+2 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+1 Apr 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+31 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+28 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+27 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#<[^>]\+>##g There's an extra slash that doesn't belong. You'd think I used all of these already. Please, forgive me.
+27 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/#<[^>]+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+26 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@VxJasonxV @: repeats commands (such as :write), whereas . repeats the last _change_. Does that make sense?
+ In reply to Jason
+26 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/ \ r//g and :%s/ \ r$// are the correct commands for the previous tip. Sorry! (Thanks @susam!)
+ In reply to Susam Pal
+26 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@susam You're right. Another case of part of the tip being eaten somewhere in the pipeline.
+ In reply to Susam Pal
+26 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+25 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/ //g to remove all those nasty ^M from a file, or :%s/ $//g for only at the end of a line. http://is.gd/8ejs
+12 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gf will open the file under the cursor. (Killer feature.) http://is.gd/4xZW
+10 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ga will display the ASCII, hex, and octal value of the character under the cursor. http://is.gd/4xZW
+8 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Just hit 200 followers. Thanks! I hope we're helping. Check out http://mileszs.github.com for more Vim stuff. (And Vim Diesel)
+7 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/[.!?]\_s\+\a/\U&\E/g will uppercase the first letter of each sentence (except the very first one). http://is.gd/4xZW
+6 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Ctrl-a, Ctrl-x will increment and decrement, respectively, the number under the cursor. http://is.gd/4xZW
+5 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:tab sball will re-tab all files in the buffers list. http://is.gd/4xZW
+4 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+ggguG will lower case the entire file (also known as the Jerry Yang treatment). http://is.gd/4xZW
+3 Mar 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:lcd %:p:h will change to the directory of the current file. http://is.gd/4xZW
+28 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:r !date will insert the current date/time stamp (from the 'date' command -- a bit OS-specific). http://is.gd/4xZW
+27 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Sex will open a file explorer in a split window. I bet you'll remember that one. http://is.gd/4xZW
+26 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/#<[^>]+>##g will remove HTML tags, leaving the text. (non-greedy) http://is.gd/4xZW
+25 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/^ \ n \{3}// will delete a block of 3 empty lines. (remove the spaces) http://is.gd/4xZW
+24 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches brackets {} [] (), and with matchit.vim, also matches def/end, < ?php/?>, < p>/< /p>, etc. http://is.gd/N4W
+21 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/< !--\_.{-}-- >// will delete HTML comments, potentially spanning multiple lines. (remove the spaces) http://is.gd/4xZW
+20 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+That last tip should have read :%s/ \ r / \ r /g, without all of the spaces. Sorry! Also, see @godfoca's response.
+20 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/ / /g turn DOS returns (^M) into real returns. http://is.gd/4xZW
+19 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with sue. http://is.gd/4xZW
+18 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vmap // y/< C-R >"< CR > will make searching for highlighted text (i.e. in visual mode) require only a highlight and // http://is.gd/4xZW
+17 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Need to edit and run a previous command? q: then find the command, edit it, and Enter to execute the line. http://is.gd/9cuP
+14 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e+1 will search for joe and place the cursor at the end of the match, plus on character. http://is.gd/4xZW
+13 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/~/sue/igc substitute your last replacement string with 'sue'. http://is.gd/4xZW
+12 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To search for a URL without backslashing, search backwards! Example: ?http://somestuff.com http://is.gd/4xZW
+11 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+10 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s#.*\(hours\).*#\1# will delete everything on a line except for the string 'hours'. http://is.gd/4xZW
+7 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/joe\|fred/jerks/g will replace both 'fred' and 'joe' with 'jerks'. http://is.gd/4xZW
+6 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:set foldmethod=syntax to make editing long files of code much easier. zo to open a fold. zc to close it. See more http://is.gd/9clX
+5 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:5s/^\n\+/\r/ will compress multiple empty lines into one. http://is.gd/4xZW
+4 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:s/\(.*\):\(.*\)/\2 : \1/ will reverse fields separated by ':' http://is.gd/4xZW
+3 Feb 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:g/search_term/# display each line containing 'search_term' with line numbers. http://is.gd/4xZW
+31 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-x >< CTRL-l > offers line completion in insert mode. http://is.gd/7Onk
+30 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+40,50m30 will move lines 40 through 50 to line 30. Most visual mode commands can be used w/ line numbers. http://is.gd/cCHy
+29 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+% matches opening and closing chars (){}[], and with matchit.vim, def/end, HTML tags, etc. as well! http://is.gd/N4W
+28 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\< fred \ >/ will search for fred, but not alfred or frederick. http://is.gd/4xZW (spaces inserted to avoid HTML filtering).
+27 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s//joe/igc substitute your last search with joe. http://is.gd/4xZW
+24 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+* # g* g# each searches for the word under the cursor (forwards/backwards) http://is.gd/7Onk
+23 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+2f/ would find the second occurrence of '/' in a line. http://is.gd/cCHy
+22 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+gq{movement} to wrap text, or just gq while in visual mode. gqap will format the current paragraph. http://is.gd/7Onk
+21 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:h slash< CTRL-d > to get a list of all help topics containing the word 'slash'. http://is.gd/7Onk
+20 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/s-2 will search for joe and place the cursor at the start of the match, minus two characters. http://is.gd/4xZW
+17 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:ju(mps) : list your movements {{help|jump-motions}} http://is.gd/7Onk
+16 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Basic commands 'f' and 't' (like first and 'til) are very powerful. See :help t or :help f. http://is.gd/cCHy
+15 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+"+y to copy to the X11 (or Windows) clipboard. "+p to paste from it. http://is.gd/9dkI (OSX users, see http://is.gd/9dmN)
+14 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/begin\_.*end/ will search for begin AND end over multiple lines. http://is.gd/4xZW
+13 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+10 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:history lists the history of your recent commands, sans duplicates. http://is.gd/7Onk
+9 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/< CTRL-r >< CTRL-w > will pull the word under the cursor into search. http://is.gd/7Onk
+8 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-o > : trace your movements backwards in a file. < CTRL-i > trace your movements forwards in a file. http://is.gd/7Onk
+7 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@: to repeat the last executed command. http://is.gd/9cuP
+6 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\_s*joe/ will search for fred AND joe with whitespace (including newline) in between. http://is.gd/4xZW
+3 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe.*fred.*bill/ will search for joe AND fred AND bill, in that order. http://is.gd/4xZW
+2 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+guu converts entire line to lowercase. gUU converts entire line to uppercase. ~ inverts case of current character. http://is.gd/7Onk
+1 Jan 09 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/e will search for joe and place the cursor at the end of the match. http://is.gd/4xZW
+31 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/fred\|joe/ will search for either fred OR joe. http://is.gd/4xZW
+30 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/\%>80v.\+ with search highlighting (:set hlsearch) will highlight any text after column 80. http://is.gd/8ekT
+27 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:%s/\r//g to remove all those nasty ^M from a file, or :%s/\r$//g for only at the end of a line. http://is.gd/8ejs
+26 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+< CTRL-n >< CTRL-p > offers word-completion while in insert mode. http://is.gd/7Onk
+25 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:e $MYVIMRC to directly edit your vimrc. :source $MYVIMRC to reload. Mappings may make it even easier. http://is.gd/7Onk
+24 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+In gvim, change the cursor depending on what mode you are in (normal, insert, etc): http://is.gd/9dq0
+23 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+== will auto-indent the current line. Select text in visual mode, then == to auto-indent the selected lines. http://is.gd/8etC
+20 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/.*fred\&.*joe/ will search for fred AND joe, in any order. http://is.gd/4xZW
+19 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:match ErrorMsg '\%>80v.\+' uses matching to highlight lines longer than 80 columns. http://is.gd/8ekT
+18 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+g< CTRL-G > to see technical information about the file, such as how many words are in it, or how many bytes it is. http://is.gd/9cYj
+17 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+To use a mouse in terminal vim, put "set mouse=a" and "set ttymouse=xterm2" in your .vimrc; although the 2nd setting may vary, :h ttymouse
+16 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern **/*.txt will search all *.txt files in the current directory and its subdirectories for the pattern. http://is.gd/8epA
+13 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:vimgrep pattern *.txt will search all .txt files in the current directory for the pattern. http://is.gd/8epA
+12 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Count the number of occurences of a word in a file with :%s/\<word\>//gn
+11 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+@seanstickle makes a good point: You can also simply press :E to get the :Ex file explorer. Thanks!
+ In reply to Sean Stickle
+11 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+:Ex to see a simple file explorer. http://is.gd/7Onk
+10 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+noremap ' ` and noremap ` ' to make marks easier to navigate. Now ` is easier to reach! http://is.gd/70Dh
+9 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+'. jumps to last modified line. `. jumps to exact position of last modification. http://is.gd/7Onk
+8 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+I'm agonizing over the exact hour. Let me know what you think.
+8 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Officially, tips should start being tweeted tomorrow at 1700 UTC. One per day!
+8 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+/joe/+3 will search for joe and place the cursor three lines below the match. http://is.gd/4xZW
+8 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Yeah! Tip tweeted via Merb console. Set up cron, and I think we're good to go.
+8 Dec 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+From a command-line, vim scp://username@host//path/to/file to edit a remote file locally. (See http://is.gd/9dwq for dependencies.)
+26 Aug 08 vimtips ‏ @vimtips  Reply  Retweet  Favorite · Open
+Position cursor behind previous occurrence of a character: T<character> eg., Tc would go to "c"ursor.
+Back to top ↑
+:%s#<[^>]\+>##g 将移出HTML 标签, 留下文本. (非贪婪匹配) is.gd/4xZW
